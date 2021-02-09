@@ -18,7 +18,7 @@ class Bucket {
 
         if(this._isClass(a.definition)) {
 
-            if(c.limit) {
+            if(a.limit) {
                 const limitInstance = this._limit.get(title)
                 if(limitInstance) {
                     return limitInstance
