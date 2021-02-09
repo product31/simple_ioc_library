@@ -3,7 +3,7 @@ import Bucket from '../Bucket'
 describe('Create a bucket', () => {
 
 
-    test('create bucket and class', () => {
+    test('create bucket and setup class', () => {
         const bucket = new Bucket()
         const setup = class Setup {
             constructor() {
@@ -17,7 +17,7 @@ describe('Create a bucket', () => {
     })
 
 
-    test('create bucket and new class instance', () => {
+    test('create bucket and new setup instance', () => {
         const bucket = new Bucket()
         const setup = class Setup {
             constructor() {
@@ -35,7 +35,7 @@ describe('Create a bucket', () => {
 
 
 
-    test('resolve dependants', () => {
+    test('resolving dependants', () => {
 
         const bucket = new Bucket()
 
@@ -55,7 +55,7 @@ describe('Create a bucket', () => {
     })
 
 
-    test('resolve class', () => {
+    test('resolving class', () => {
 
         const bucket = new Bucket()
 
@@ -74,7 +74,7 @@ describe('Create a bucket', () => {
     })
 
 
-    test('resolve a new class with dependants', () => {
+    test('resolve a new setup class with dependants', () => {
 
         const bucket = new Bucket()
         const limit = class LimitClass {
