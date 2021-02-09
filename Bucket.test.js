@@ -4,7 +4,7 @@ describe('Create a bucket', () => {
 
 
     test('create bucket and class', () => {
-        const container = new Bucket()
+        const bucket = new Bucket()
         const setup = class Setup {
             constructor() {
                 this.value = 1
@@ -67,7 +67,7 @@ describe('Create a bucket', () => {
         bucket.limit('setup', setup)
 
         const setupInstance = bucket.retrieve('setup')
-        expect(setupyInstance.value).toBe(1)
+        expect(setupInstance.value).toBe(1)
         setupInstance.value = 2
         const setupInstance2 = bucket.retrieve('setup')
         expect(setupInstance2.value).toBe(2)
