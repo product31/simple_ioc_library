@@ -1,4 +1,4 @@
-import Bucket from '../Bucket'
+import Bucket from 'Bucket'
 
 describe('Create a bucket', () => {
 
