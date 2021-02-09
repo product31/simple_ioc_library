@@ -54,4 +54,4 @@ class Bucket {
         return typeof definition === 'function'
     }
 }
-export default Container
+export default Bucket
