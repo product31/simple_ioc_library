@@ -11,7 +11,7 @@ const bucket = new Bucket()
 
 bucket.book('setup', {key:value})
 bucket.book('upload', Upload, ['setup']) 
-bucket.single('logger', Logger, ['setup'])
+bucket.limit('logger', Logger, ['setup'])
 
 ```
 
@@ -20,9 +20,9 @@ Retrieve class from bucket
 
 ```javascript
 
-container.get('setup')
-container.get('upload') // New upload instance with setup from constructor 
-container.get('logger') // Logger instance
+bucket.retrieve('setup')
+bucket.retrieve('upload') // New upload instance with setup from constructor 
+bucket.retrieve('logger') // Logger instance
 
 ```
 
