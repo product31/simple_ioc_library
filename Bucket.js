@@ -23,7 +23,7 @@ class Bucket {
                 if(limitInstance) {
                     return limitInstance
                 } else {
-                    const newLimitInstance = this._createInstance(a)
+                    const newLimitInstance = this._instantiateInstance(a)
                     this._limit.set(title, newLimitInstance)
                     return newLimitInstance
                 }
