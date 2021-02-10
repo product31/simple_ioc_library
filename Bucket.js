@@ -14,7 +14,7 @@ class Bucket {
     }
 
     retrieve(title) {
-        const a = this._utility.retrieve(title)
+        const a = this._utility.get(title)
 
         if(this._isClass(a.definition)) {
 
