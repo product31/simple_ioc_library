@@ -39,8 +39,8 @@ class Bucket {
     _getDependants(service) {
         let classDependants = []
         if(utility.dependants) {
-            classDependants = utility.dependants.map((new) => {
-                return this.retrieve(new)
+            classDependants = utility.dependants.map((dep) => {
+                return this.retrieve(dep)
             })
         }
         return classDependants
