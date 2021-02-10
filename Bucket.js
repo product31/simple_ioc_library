@@ -47,7 +47,7 @@ class Bucket {
     }
 
     _instantiateInstance(utility) {
-        return new utility.definition(...this._getDependencies(utility))
+        return new utility.definition(...this._getDependants(utility))
     }
 
     _isClass(definition) {
